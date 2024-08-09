@@ -20,3 +20,6 @@ When(`I click on login button`, () =>{
   loginPage.clickOn_Login_Button();
 })
 
+Then (`I should be redirected to the products page`, () =>{
+  cy.get('[data-test="title"]').should('have.text', 'Products');
+})

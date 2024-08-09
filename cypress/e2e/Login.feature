@@ -6,7 +6,7 @@ Feature: Swab Labs - Login page
     And I type a valid username <username>
     And I type a valid password <password>
     And I click on login button
-    #Then I should be redirected to the products page
+    Then I should be redirected to the products page
 
     Examples:
       | username      | password     |
